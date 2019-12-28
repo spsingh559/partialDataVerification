@@ -3,11 +3,10 @@ const identityController=require('./merkleAlgoWithRoots');
 
 const originalIdentity=  {
     name:"Alice",
-    age:"21",
-    mobileNumber:"5511xxxxx",
     emailId:"alice@gmail.com",
     salaryPerMonthInDollar:10000,
-    creditCardScore:4
+    bonus:2000,
+    salaryMonth:"Dec2019"
   }
   console.log('==============Original Identity ===========');
   console.log(originalIdentity);
@@ -21,11 +20,10 @@ let {root, tree} =identityController.MerkleRootGeneration(originalIdentity)
 // console.log('==============verification process started===========')
 const fakeIdentity=  {
   name:"Alice",
-    age:"21",
-    mobileNumber:"5511xxxxx",
-    emailId:"alice@gmail.com",
-    salaryPerMonthInDollar:11000, //Tampered Salary Data
-    creditCardScore:4
+  emailId:"alice@gmail.com",
+  salaryPerMonthInDollar:11000, //tampered salary data
+  bonus:2000,
+  salaryMonth:"Dec2019"
   }
   console.log('\n')
   console.log('==============fake Identity ===========');
