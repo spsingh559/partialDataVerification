@@ -7,7 +7,9 @@ I am using merkle tree algoithm to achieve same functionality.
 How to use this solution :
 
 npm install
+
 cd merkleWithRoot/
+ 
 node index.js
 
 For real use case, read my medium article
